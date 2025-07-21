@@ -1,0 +1,3 @@
+﻿  Banck.cpp
+C:\Users\MASSIVE\Desktop\hadhod\course 7\Banck1\Banck.cpp(59,1): warning C4715: 'FindClient': not all control paths return a value
+  Banck.vcxproj -> C:\Users\MASSIVE\Desktop\hadhod\course 7\Banck1\x64\Debug\Banck.exe
