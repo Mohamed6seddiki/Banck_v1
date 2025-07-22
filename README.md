@@ -1,42 +1,66 @@
-Bank Management System<br>
-A comprehensive console-based bank management application built in C++ for managing client accounts and banking operations.<br>
-##
-📋 Features<br><br>
+# Bank Management System
 
-Client Management: Complete CRUD operations for bank clients<br>
-Account Operations: Create, view, update, and delete client accounts<br>
-Data Persistence: File-based storage system using text files<br>
-Interactive Menu: User-friendly console interface with menu navigation<br>
-Input Validation: Robust error handling and input validation<br>
-Account Security: PIN code protection for client accounts<br><br>
-##
-🔧 Core Functionality<br>
-Main Operations<br><br>
+A console-based banking application written in C++ that provides comprehensive client account management and transaction processing capabilities.
 
-List Clients: Display all registered clients in a formatted table<br>
-Add New Client: Register new clients with account validation<br>
-Delete Client: Remove clients with confirmation prompts<br>
-Update Client Info: Modify existing client information<br>
-Find Client: Search for specific clients by account number<br>
-Exit: Clean program termination<br><br>
+## Features
 
-Client Data Management<br><br>
+### Client Management
+- **Add New Clients**: Create new client accounts with unique account numbers
+- **View All Clients**: Display complete client list with account details
+- **Find Client**: Search for specific clients by account number
+- **Update Client Info**: Modify existing client information
+- **Delete Client**: Remove client accounts from the system
 
-Account Number (unique identifier)<br>
-PIN Code (security)<br>
-Full Name<br>
-Phone Number<br>
-Account Balance<br><br>
-##
-🏗️ Technical Architecture<br>
-Key Components<br><br>
+### Transaction Operations
+- **Deposit**: Add funds to client accounts
+- **Withdraw**: Remove funds with balance validation
+- **Balance Inquiry**: View individual and total account balances
+- **Transaction Confirmation**: User confirmation required for all transactions
 
-Data Structure: Custom sClient struct for client information<br>
-File I/O: Text file-based data persistence (Clients.txt)<br>
-String Processing: Custom string splitting and parsing functions<br>
-Menu System: Enum-based menu navigation
-Input Handling: Comprehensive input validation and error checking
+### Data Management
+- **File-Based Storage**: Persistent data storage using text files
+- **Data Validation**: Account number uniqueness and balance checks
+- **Safe Operations**: Mark-for-delete system ensures data integrity
 
-File Format
-Uses a custom delimiter-based format (#//#) for storing client data:
-AccountNumber#//#PinCode#//#Name#//#Phone#//#Balance
+## Technical Implementation
+
+- **Language**: C++
+- **Data Structure**: Vector-based client records
+- **File I/O**: Custom file handling for data persistence
+- **User Interface**: Menu-driven console application
+- **Data Format**: Delimited text file storage (#//# separator)
+
+## Getting Started
+
+1. Compile the program using any C++ compiler
+2. Run the executable
+3. Use the menu system to navigate between client management and transactions
+4. Client data is automatically saved to `Clients.txt`
+
+## Menu Structure
+
+```
+Main Menu
+├── Show Client List
+├── Add New Client  
+├── Delete Client
+├── Update Client Info
+├── Find Client
+├── Transactions
+│   ├── Deposit
+│   ├── Withdraw
+│   ├── Total Balances
+│   └── Return to Main Menu
+└── Exit
+```
+
+## Client Record Structure
+
+Each client record contains:
+- Account Number (unique identifier)
+- PIN Code
+- Full Name
+- Phone Number
+- Account Balance
+
+Perfect for learning C++ file handling, data structures, and building menu-driven applications.
